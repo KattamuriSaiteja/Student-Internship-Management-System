@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".student.ConfirmationActivity">
+
+    <ImageView
+        android:id="@+id/imgHomeLogo"
+        android:layout_width="142dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/homelogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgTickMark"
+        android:layout_width="260dp"
+        android:layout_height="266dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/submittedlogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/txtApplicationSubmitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/submitted_sucessfully"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtApplicationIdConfirmationPage"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/txtApplicationIdConfirmationPage"
+        android:layout_width="355dp"
+        android:layout_height="103dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="144dp"
+        android:text="Your application id is: 919234"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
